@@ -22,8 +22,8 @@ export class FireService {
     });
   }
 
-  getTasks() {
-    return this.tasks; 
+  getAllTasks() {
+    return this.tasks;
   }
 
   addTask(task: Task) {

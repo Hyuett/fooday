@@ -1,7 +1,11 @@
+<input type="button" class="btn btn-primary" (click)="searchTasks(1)" value="Tipo 1">
+<input type="button" class="btn btn-primary" (click)="searchTasks(2)" value="Tipo 2">
+<input type="button" class="btn btn-primary" (click)="searchTasks()" value="Todas">
+
 <div *ngIf="tasks?.length > 0; else noTasks">
   <ul *ngFor="let t of tasks" class="collection">
     <li class="collection-item">
-      <strong>{{t.title}}</strong>: {{t.description}}
+      <strong>{{t.title}}</strong>: {{t.description}} <strong>({{t.type}})</strong>
     </li>
   </ul>
 </div>
