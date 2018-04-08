@@ -1,0 +1,11 @@
+<div *ngIf="tasks?.length > 0; else noTasks">
+  <ul *ngFor="let t of tasks" class="collection">
+    <li class="collection-item">
+      <strong>{{t.title}}</strong>: {{t.description}}
+    </li>
+  </ul>
+</div>
+
+<ng-template #noTasks>
+  <h4>No hay tareas!</h4>
+</ng-template>

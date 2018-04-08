@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FiredataService } from '../firedata.service';
+// import { FiredataService } from '../firedata.service';
 
 import { AngularFireDatabase } from 'angularfire2/database'
 import { Observable } from 'rxjs/Observable';
@@ -7,8 +7,8 @@ import { Observable } from 'rxjs/Observable';
 @Component({
   selector: 'courses-list',
   templateUrl: './courses-list.component.html',
-  styleUrls: ['./courses-list.component.css'],
-  providers: [FiredataService]
+  styleUrls: ['./courses-list.component.css']
+  // ,providers: [FiredataService]
 })
 export class CoursesListComponent implements OnInit {
 
